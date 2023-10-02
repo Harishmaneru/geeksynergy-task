@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route  } from 'react-router-dom';
+import Signup from './Signup';
+import Login from './Login';
+import Movies from './movies';  
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<Signup/>} />
+          <Route path="/Login" element={<Login/>} />
+          <Route path="/Movies" element={<Movies/>} />
+          <Route path="*" element={<NotFound />} /> {/* Catch-all route for 404 */}
+          </Routes>
+    </BrowserRouter>
+  );
+};
+const NotFound = () => {
+  return (
+    <div className='noroute'>
+      <div className='content'>
+        <h1>404 Page Not Found</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Looks like you've followed a broken link or entered a URL that doesn't exist on this site.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>
+          <a href="/"><strong>&lt; Back to our site</strong></a>
+        </p>
+      </div>
     </div>
   );
-}
+};
+
+
 
 export default App;

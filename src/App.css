@@ -1,38 +1,215 @@
-.App {
+/* Signup.css */
+.signup-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-right:50px;
+}
+
+.signup-container h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-group {
+  margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path d="M6 8L0 0h12z"/></svg>') no-repeat right center;
+  background-size: 12px 8px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+  
+  /* Login.css */
+  .login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .form-group {
+    margin-bottom: 15px;
   }
-}
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .navbar {
+    background-color: #8ccb7f;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  
+  .navbar-left {
+    font-weight: bold;
+  }
+  
+  .navbar-right button {
+    background-color: transparent;  
+    color: #333;  
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none; 
+    font-size: 16px;  
+    text-decoration: underline;  
+    
+ 
+  }
+  .company-info {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;  
+    margin-right: 30%;
+    margin-left: 30%;
+  }
+  /* CSS Styles */
+ 
+
+ 
+  .movie-item {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .left-section {
+    display: flex;
+   
+    
+  }
+  .vote-count {
+    margin-top: 50px;
+  }
+  .vote-value{
+    font-weight: bold;
+    margin-left: 15px;
+   
+  }
+  .center-section {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .movie-poster {
+    width: 150px;
+    height: auto;
+    max-height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding-top: -20%;
+  }
+  
+  .movie-title {
+    font-size: 18px;
+    margin-bottom: 0;
+    line-height: 0.5;
+  }
+  
+  .movie-info {
+    margin-bottom: 5px;
+    line-height: 0.5;
+  }
+ 
+
+
+  .info-label {
+    font-weight: bold;
+  }
+  
+  .watch-trailer-button {
+    margin-top: 10px;
+    padding: 10px 100px;
+    
+    background-color: #007bff; /* Change to your preferred button color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    
+  
+    /* Hover effect */
+    &:hover {
+      background-color: #0056b3; /* Change to your preferred hover color */
+    }
+  }
+  
+  
